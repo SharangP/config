@@ -1,0 +1,13 @@
+# aliases
+alias ls='ls'
+alias ll='ls -lah'
+
+# git
+alias gs='git status'
+alias gd='git diff'
+alias gco='git checkout'
+alias gb='git branch'
+alias gp='git push'
+alias gpl='git pull'
+alias gst='git stash'
+alias gsa='git stash apply'
