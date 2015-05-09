@@ -1,1 +1,1 @@
-source shellrc
+source "config/shellrc"

@@ -1,6 +1,6 @@
 # aliases
-alias ls='ls'
-alias ll='ls -lah'
+alias ls='ls --color'
+alias ll='ls -lah --color'
 
 # git
 alias gs='git status'
@@ -11,3 +11,5 @@ alias gp='git push'
 alias gpl='git pull'
 alias gst='git stash'
 alias gsa='git stash apply'
+alias gcm='git commit -m'
+alias gca='git commit -am'
