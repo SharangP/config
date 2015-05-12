@@ -39,16 +39,28 @@ set smarttab
 set si "Smart indent
 set wrap "Wrap lines
 
+"
+" Navigation
+"
 " Moving between windows with control
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
 " Moving between tabs
 nmap <leader>z :bp<cr>
 nmap <leader>x :bn<cr>
-
 " Moving between lines if text wraps
 map j gj
 map k gk
+
+"
+" Nerdtree
+"
+" start nerdtree on start if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" close nerdtree if its the only tab open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" shortcut to open nerdtree
+map <C-n> :NERDTreeToggle<CR>
