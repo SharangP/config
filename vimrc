@@ -64,3 +64,27 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " shortcut to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+"
+" NerdCommenter
+"
+nmap <C-_> ,ci<Space>
+vmap <C-_> ,ci<Space>
+
+"
+" Syntastic
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"
+" Airline
+"
+set laststatus=2
+let g:airline_powerline_fonts = 1
