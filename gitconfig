@@ -1,0 +1,9 @@
+[push]
+	default = simple
+[user]
+	email = sharang.phadke@gmail.com
+	name = SharangP
+[credential]
+    helper = cache --timeout=3600
+[branch]
+    autosetuprebase = always
