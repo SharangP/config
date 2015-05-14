@@ -1,6 +1,7 @@
-# aliases
+# utilities
 alias ls='ls --color'
 alias ll='ls -lah --color'
+alias ag='grep -r --color'
 
 # git
 alias gs='git status'
@@ -14,4 +15,3 @@ alias gsa='git stash apply'
 alias gcm='git commit -m'
 alias gca='git commit -am'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
-
