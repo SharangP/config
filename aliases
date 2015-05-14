@@ -2,6 +2,8 @@
 alias ls='ls --color'
 alias ll='ls -lah --color'
 alias ag='grep -r --color'
+alias wifi='sudo wifi-menu'
+alias psg='ps aux | grep'
 
 # git
 alias gs='git status'

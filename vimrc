@@ -10,9 +10,6 @@ set background=dark
 colorscheme solarized
 filetype plugin indent on
 
-" Set to auto read when a file is changed from the outside
-set autoread
-
 " Set map leader for quick combos
 let mapleader = ","
 nmap <leader>w :w<cr>
@@ -24,20 +21,61 @@ nmap <leader>ss :setlocal spell!<cr>
 set ignorecase "Ignore case when searching
 set smartcase
 set hlsearch "Highlight search things
-set nu "set line numbers
+set number
+nnoremap <space> /
 
 " No sound on errors
 set noerrorbells
 set novisualbell
 
+" Set to auto read when a file is changed from the outside
+set autoread
+
 " Tabs and indents
+set autoindent
+set copyindent
 set expandtab
 set shiftwidth=4
 set tabstop=4
 set smarttab
-"set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+set smartindent
+set wrap
+
+" Better splits and menu
+set splitbelow
+set splitright
+set wildmenu
+
+" keep 5 lines visible below cursor
+set scrolloff=5
+
+" show current line and col
+set cursorline
+set cursorcolumn
+
+"
+" Folding
+"
+set foldenable
+" hide fold column on start
+set foldcolumn=0
+" set folds by syntax
+set foldmethod=syntax
+" start with all folds open
+set foldlevelstart=99
+" specify commands which open folds
+set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
+" make foldcolumn 4 characters wide
+let g:last_fold_column_width = 4
+function! FoldColumnToggle()
+  if &foldcolumn
+    let g:last_fold_column_width = &foldcolumn
+    setlocal foldcolumn=0
+  else
+    let &l:foldcolumn = g:last_fold_column_width
+  endif
+endfunction
+
 
 "
 " Navigation
@@ -90,3 +128,4 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='dark'
+
