@@ -7,6 +7,7 @@ ln -s "$CONFIGPATH/bashrc" ~/.bashrc
 ln -s "$CONFIGPATH/zshrc" ~/.zshrc
 ln -s "$CONFIGPATH/vim" ~/.vim
 ln -s "$CONFIGPATH/vimrc" ~/.vimrc
+ln -s "$CONFIGPATH/gitconfig" ~/.gitconfig
 
 #install fonts
 git clone https://github.com/powerline/fonts.git
