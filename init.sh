@@ -22,3 +22,6 @@ chsh -s /bin/zsh
 sed s/robbyrussell/agnoster/g ~/.zshrc -i
 echo "source $HOME/config/aliases" >> ~/.zshrc
 echo "source $HOME/config/env" >> ~/.zshrc
+
+#urxvt clipboard
+curl https://raw.githubusercontent.com/muennich/urxvt-perls/master/clipboard > sudo tee /usr/lib/urxvt/perl/
