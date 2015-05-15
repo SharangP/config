@@ -12,3 +12,11 @@ ln -s "$CONFIGPATH/gitconfig" ~/.gitconfig
 #install fonts
 git clone https://github.com/powerline/fonts.git
 fonts/install.sh
+
+#install oh-my-zsh
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+chsh -s /bin/zsh
+sed s/robbyrussell/agnoster/g ~/.zshrc -i
+echo "source $HOME/config/aliases" >> ~/.zshrc
+echo "source $HOME/config/env" >> ~/.zshrc
