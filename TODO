@@ -5,9 +5,10 @@
 - [x] oh-my-zsh
 - [X] xmodmap (brightness, volume, caps lock)
 - [X] redshift
-- [ ] xclip/xsel
-- [ ] editline/readline
+- [X] vi-mode
+- [ ] copy/paste
 - [ ] flash
+- [ ] statusbar
 - [ ] encrypt the disk
 - [ ] youcompleteme
 - [ ] ssh

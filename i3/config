@@ -162,6 +162,9 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec light -s acpi_video0 -A 15
 bindsym XF86MonBrightnessDown exec light -s acpi_video0 -U 15
 
+# copy paste
+# TODO
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {

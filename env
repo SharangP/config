@@ -1,1 +1,26 @@
-export EDITOR='vim'
+## ENV
+EDITOR='vim'
+
+## ALIASES
+# utilities
+alias ls='ls --color'
+alias ll='ls -lah --color'
+alias wifi='sudo wifi-menu'
+alias psg='ps aux | grep'
+alias xclip='xclip -sel c'
+
+# git
+alias gs='git status'
+alias gd='git diff'
+alias gco='git checkout'
+alias gb='git branch'
+alias gp='git push'
+alias gpl='git pull'
+alias gst='git stash'
+alias gsa='git stash apply'
+alias gcm='git commit -m'
+alias gca='git commit -am'
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
+
+# re-enable back-i-search with ohmyzsh vi-mode plugin
+bindkey "^R" history-incremental-search-backward
