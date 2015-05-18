@@ -9,6 +9,8 @@ syntax on
 set background=dark
 colorscheme solarized
 filetype plugin indent on
+set noswapfile
+set hidden
 
 " Set map leader for quick combos
 let mapleader = ","
