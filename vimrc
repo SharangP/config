@@ -9,6 +9,7 @@ syntax on
 set background=dark
 colorscheme solarized
 filetype plugin indent on
+set autoread
 set noswapfile
 set hidden
 
@@ -31,9 +32,6 @@ nnoremap <space> /
 set noerrorbells
 set novisualbell
 
-" Set to auto read when a file is changed from the outside
-set autoread
-
 " Tabs and indents
 set autoindent
 set copyindent
@@ -43,6 +41,9 @@ set tabstop=4
 set smarttab
 set smartindent
 set wrap
+
+" html tabs
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
 
 " Better splits and menu
 set splitbelow
