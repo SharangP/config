@@ -30,7 +30,7 @@ nnoremap <space> /
 
 " No sound on errors
 set noerrorbells
-set novisualbell
+set visualbell
 
 " Tabs and indents
 set autoindent

@@ -15,5 +15,7 @@ alias gst='git stash'
 alias gsa='git stash apply'
 alias gcm='git commit -m'
 alias gca='git commit -am'
+alias gr='git rebase'
+alias gm='git merge --ff-only'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 

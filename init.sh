@@ -10,6 +10,10 @@ if [ "$(uname)" == "Darwin" ]; then
     ln -s "$CONFIGPATH/vimrc" ~/.vimrc
 
     echo "source $HOME/config/aliases" >> ~/.bashrc
+    echo "source $HOME/config/mac_bashrc" >> ~/.bashrc
+    curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
+    curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     echo "Linux system detected"
