@@ -1,4 +1,4 @@
-EDITOR='mvim -v'
+export EDITOR='mvim -v'
 
 alias ls='ls -G'
 alias ll='ls -alG'
@@ -9,12 +9,16 @@ if [ -f ~/.git-completion.bash ]; then
     source ~/.git-completion.bash
 fi
 
+__git_complete gco _git_checkout
+__git_complete gd _git_diff
+
 # Git prompt
 if [ -f ~/.git-prompt.sh ]; then
     GIT_PROMPT_ONLY_IN_REPO=true
     GIT_PS1_SHOWDIRTYSTATE=true
     GIT_PS1_SHOWCOLORHINTS=true
     source ~/.git-prompt.sh
-    #PROMPT_COMMAND='__git_ps1 "\u@\h: \W" "\\\$ "'
-    PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+    #PROMPT_COMMAND='__git_ps1 "\u@mac: \W" "\\\$ "'
+#TODO: http://engineerwithoutacause.com/show-current-virtualenv-on-bash-prompt.html
+    PS1='[\u@mac \W$(__git_ps1 " (%s)")]\$ '
 fi

@@ -8,6 +8,7 @@ if [ "$(uname)" == "Darwin" ]; then
     
     ln -s "$CONFIGPATH/vim" ~/.vim
     ln -s "$CONFIGPATH/vimrc" ~/.vimrc
+    ln -s "$CONFIGPATH/inputrc" ~/.inputrc
 
     echo "source $HOME/config/aliases" >> ~/.bashrc
     echo "source $HOME/config/mac_bashrc" >> ~/.bashrc
