@@ -10,3 +10,4 @@ git clone https://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
 git clone https://github.com/bling/vim-airline.git bundle/vim-airline
 git clone https://github.com/othree/html5.vim.git bundle/html5.vim
 git clone https://github.com/pangloss/vim-javascript.git bundle/vim-javascript
+git clone https://github.com/Valloric/YouCompleteMe.git bundle/YouCompleteMe

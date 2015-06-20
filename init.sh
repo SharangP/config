@@ -15,6 +15,10 @@ if [ "$(uname)" == "Darwin" ]; then
     curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
     curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
+    #YouCompleteMe
+    cd YouCompleteMe
+    git -C ~/.vim/bundle/YouCompleteMe submodule update --init --recursive
+    ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     echo "Linux system detected"
