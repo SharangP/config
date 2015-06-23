@@ -3,6 +3,7 @@
 ## ALIASES
 # utilities
 alias psg='ps aux | grep'
+alias findfile='find . -type f -name'
 
 # git
 alias gs='git status'

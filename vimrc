@@ -17,7 +17,7 @@ set hidden
 let mapleader = ","
 nmap <leader>w :w<cr>
 nmap <leader>q :q<cr>
-nmap <leader>bd :bd<cr>
+nmap <leader>bc :bp\|bd #<cr>
 nmap <leader>pp :setlocal paste!<cr>
 nmap <leader>ss :setlocal spell!<cr>
 
