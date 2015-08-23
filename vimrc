@@ -45,6 +45,9 @@ set wrap
 " html tabs
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
 
+"crontab editing
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 " Better splits and menu
 set splitbelow
 set splitright
