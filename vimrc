@@ -131,8 +131,10 @@ let g:syntastic_check_on_wq = 0
 "
 " Airline
 "
+set guifont=Monaco\ for\ Powerline:h14
 set laststatus=2
 let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='dark'
 
