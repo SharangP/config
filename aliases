@@ -2,6 +2,7 @@
 
 ## ALIASES
 # utilities
+alias resolve='dig +short -x'
 alias psg='ps aux | grep'
 alias findfile='find . -type f -name'
 alias makepass='openssl rand -base64 16'
@@ -16,7 +17,7 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gp='git push'
 alias gpl='git pull'
-alias gst='git stash'
+alias gss='git stash save'
 alias gsp='git stash pop'
 alias gcm='git commit -m'
 alias gca='git commit --amend --no-edit'
@@ -24,3 +25,21 @@ alias gr='git rebase'
 alias gm='git merge --ff-only'
 alias gl='git log -n 10 --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 
+function gp_new () {
+    BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    git push --set-upstream origin $BRANCH
+}
+
+function land_branch () {
+    BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    if [ ${BRANCH} == 'master' ] ; then
+      echo "Don't use git land-branch on master! simply push instead"
+        exit 1
+    fi
+
+    git rebase -i master
+    git checkout master
+    git merge $BRANCH --ff-only
+    git pull
+    git push origin master
+}
