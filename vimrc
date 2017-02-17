@@ -139,3 +139,8 @@ let g:Powerline_symbols = 'fancy'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='dark'
 
+
+"
+" vim-gitgutter
+"
+set updatetime=250
