@@ -40,6 +40,6 @@ function land_branch () {
     git rebase -i master
     git checkout master
     git merge $BRANCH --ff-only
-    git pull
+    git pull origin master
     git push origin master
 }
