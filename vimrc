@@ -4,14 +4,22 @@
 " set solarized color theme, syntax highlighting, pathogen
 set nocompatible
 set t_Co=16
-call pathogen#infect()
 syntax on
 set background=dark
-colorscheme solarized
+call pathogen#infect()
+
+" TODO: fix
+" solarized options 
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+" colorscheme solarized
+colorscheme desert
+
 filetype plugin indent on
 set autoread
 set noswapfile
 set hidden
+
 
 " Set map leader for quick combos
 let mapleader = ","
