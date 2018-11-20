@@ -5,6 +5,8 @@
 set nocompatible
 set t_Co=16
 syntax on
+set vb
+set t_vb=
 set background=dark
 call pathogen#infect()
 
