@@ -1,0 +1,20 @@
+Steps for setting up Sharang's Mac
+
+1. app store: install standard apps, notably xcode
+
+2. clone config
+git clone https://github.com/SharangP/config.git
+
+3. install mac packages
+bash config/mac_packages.sh
+
+4. setup git 
+git config --global user.name "Sharang Phadke"
+git config --global user.email "sharang.phadke@gmail.com"
+git config --global pull.rebase true
+
+5. setup environment
+bash config/mac_init.sh
+
+5. setup vim
+bash config/vim/get_bundles.sh

@@ -14,5 +14,17 @@ brew tap caskroom/cask
 brew tap spotify/public
 
 brew install coreutils the_silver_searcher macvim
-brew cask install caffeine spotify evernote
+brew cask install \
+    alfred \
+    brave-browser \
+    caffeine \
+    discord \
+    docker \
+    evernote \
+    flux \
+    google-chrome \
+    iterm2 \
+    postman \
+    spotify \
+    vlc
 
