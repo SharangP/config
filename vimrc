@@ -144,7 +144,7 @@ let g:syntastic_loc_list_height = 4
 "
 set guifont=Monaco\ for\ Powerline:h14
 set laststatus=2
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'dark'
