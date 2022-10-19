@@ -18,8 +18,9 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 # preferences
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
-defaults write com.apple.finder ShowPathbar -bool true
+# Forgot what these are...
+# defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+# defaults write com.apple.finder ShowPathbar -bool true
 
 # TODO: fix this
 #YouCompleteMe

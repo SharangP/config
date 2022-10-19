@@ -5,26 +5,32 @@ set -e
 # Install homebrew if not already installed
 if [[ ! $(which brew) ]]; then
   echo "Installing Homebrew."
-  ruby \
-    -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" \
-    </dev/null
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" </dev/null
 fi
 
-brew tap caskroom/cask
-brew tap spotify/public
+# Add to path
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/sphadke/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/sphadke/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-brew install coreutils the_silver_searcher macvim
-brew cask install \
-    alfred \
-    brave-browser \
-    caffeine \
-    discord \
+
+brew tap homebrew/cask
+
+brew install \
+    coreutils \
     docker \
-    evernote \
+    the_silver_searcher 
+brew install --cask \
+    alfred \
+    atom \
+    brave-browser \
     flux \
     google-chrome \
     iterm2 \
+    neovim \
+    notion \
     postman \
+    slack \
     spotify \
-    vlc
+    zoom
 
