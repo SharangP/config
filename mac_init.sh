@@ -21,6 +21,7 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 # Forgot what these are...
 # defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
 # defaults write com.apple.finder ShowPathbar -bool true
+# defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # TODO: fix this
 #YouCompleteMe

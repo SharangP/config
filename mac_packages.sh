@@ -32,5 +32,7 @@ brew install --cask \
     postman \
     slack \
     spotify \
+    visual-studio-code \
+    warp \
     zoom
 
