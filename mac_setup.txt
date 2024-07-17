@@ -1,6 +1,7 @@
 Steps for setting up Sharang's Mac
 
-1. app store: install standard apps, notably xcode
+1. Install homebrew, which installs xcode
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 2. clone config
 git clone https://github.com/SharangP/config.git
@@ -16,5 +17,7 @@ git config --global pull.rebase true
 5. setup environment
 bash config/mac_init.sh
 
-5. setup vim
+6. setup vim
 bash config/vim/get_bundles.sh
+
+7. Install things from mac app store
