@@ -9,17 +9,16 @@ if [[ ! $(which brew) ]]; then
 fi
 
 # Add to path
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/sphadke/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/sphadke/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-
-brew tap homebrew/cask
 
 brew install \
     coreutils \
     docker \
-    the_silver_searcher 
+    the_silver_searcher \
+    vim
 brew install --cask \
     alfred \
     atom \
@@ -27,9 +26,7 @@ brew install --cask \
     flux \
     google-chrome \
     iterm2 \
-    neovim \
     notion \
-    postman \
     slack \
     spotify \
     visual-studio-code \
