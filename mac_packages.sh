@@ -14,18 +14,12 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
-brew install \
-    coreutils \
+brew install coreutils \
     docker \
     the_silver_searcher \
-    vim
-brew install --cask \
+    vim \
     alfred \
-    atom \
-    brave-browser \
-    flux \
     google-chrome \
-    iterm2 \
     notion \
     slack \
     spotify \
